@@ -14,4 +14,11 @@ header.style.borderBottom = 'solid 3px black';
 let additems = document.getElementById('additem')
 additems.style.fontWeight = 'bold';
 additems.style.color = 'yellow';
-.
+
+let listgroup = document.getElementsByClassName('list-group-item')
+console.log(listgroup)
+listgroup[1].style.backgroundColor = 'green'
+
+for(var i=0; i<listgroup.length; i++) {
+    listgroup[i].style.fontWeight = 'bold'
+}
